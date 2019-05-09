@@ -1,0 +1,44 @@
+{
+  "name": "flipper",
+  "private": true,
+  "version": "0.19.0",
+  "versionDate": "2018-4-12",
+  "description": "Mobile development tool",
+  "productName": "Flipper",
+  "author": "Facebook Inc",
+  "main": "index.js",
+  "icon": "icon.png",
+  "category": "facebook-intern",
+  "privileged": true,
+  "resolutions": {
+    "@jest-runner/electron/electron": "4.0.8"
+  },
+  "jest": {
+    "transform": {
+      "\\.(js)$": "<rootDir>/static/transforms/index.js"
+    },
+    "setupFiles": [
+      "<rootDir>/static/globalTestSetup.js"
+    ]
+  },
+  "dependencies": {
+    "@babel/core": "^7.1.0",
+    "@babel/generator": "^7.1.0",
+    "@babel/parser": "^7.3.1",
+    "@babel/plugin-proposal-class-properties": "^7.1.0",
+    "@babel/plugin-proposal-object-rest-spread": "^7.0.0",
+    "@babel/plugin-proposal-optional-chaining": "^7.0.0",
+    "@babel/plugin-transform-flow-strip-types": "^7.2.3",
+    "@babel/plugin-transform-modules-commonjs": "^7.1.0",
+    "@babel/preset-react": "^7.0.0",
+    "expand-tilde": "^2.0.2",
+    "metro": "^0.49.0",
+    "mkdirp": "^0.5.1",
+    "recursive-readdir": "2.2.2",
+    "xdg-basedir": "^3.0.0"
+  },
+  "optionalDependencies": {
+    "7zip-bin-mac": "^1.0.1"
+  },
+  "revision": "451d49df860f220b8fb4024df7a8ad72a4c4274e"
+}
